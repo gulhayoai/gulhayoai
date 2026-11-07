@@ -1,80 +1,30 @@
 <!DOCTYPE html>
-<html lang="uz">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Сунъий интеллект — келажак бугун</title>
-<style>
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
---bg:#f7f8fc;--surface:#fff;--text:#12142a;--muted:#5a5f7d;--accent:#5b4bff;--accent2:#00b3a4;--border:#e3e5f1}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0b0d1c;--surface:#14172c;--text:#eef0ff;--muted:#a3a8c8;--accent:#8a7dff;--accent2:#2fe0cf;--border:#252a4a}}
-:root[data-theme="dark"]{color-scheme:dark;--bg:#0b0d1c;--surface:#14172c;--text:#eef0ff;--muted:#a3a8c8;--accent:#8a7dff;--accent2:#2fe0cf;--border:#252a4a}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
-.logo{font-weight:800;font-size:20px}
-.logo span{color:var(--accent)}
-nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:15px}
-.hero{padding:70px 0 60px;text-align:center}
-.badge{display:inline-block;padding:6px 14px;border:1px solid var(--border);border-radius:99px;color:var(--accent);font-size:13px;background:var(--surface)}
-h1{font-size:clamp(34px,6vw,60px);line-height:1.1;margin:22px 0 16px}
-h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{max-width:620px;margin:0 auto 30px;color:var(--muted);font-size:18px}
-.btn{display:inline-block;padding:14px 28px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-.btn.alt{background:transparent;color:var(--text);border:1px solid var(--border);margin-left:10px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:10px 0 70px}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px;text-align:center}
-.stat b{display:block;font-size:30px;color:var(--accent)}
-.stat span{color:var(--muted);font-size:14px}
-h2{font-size:30px;text-align:center;margin:0 0 30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:70px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px}
-.card i{font-style:normal;font-size:28px}
-.card h3{margin:12px 0 8px}
-.card p{margin:0;color:var(--muted);font-size:15px}
-.cta{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:24px;padding:48px 24px;text-align:center;color:#fff;margin-bottom:50px}
-.cta h2{margin-bottom:10px}
-.cta p{margin:0 0 22px;opacity:.95}
-.cta .btn{background:#fff;color:#12142a}
-footer{text-align:center;color:var(--muted);font-size:14px;padding:20px 0 30px}
-@media(max-width:600px){.stats{grid-template-columns:1fr}.btn.alt{margin:10px 0 0}nav a{margin-left:12px}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<nav><div class="logo">AI<span>Лаб</span></div><div><a href="#xizmat">Хизматлар</a><a href="#aloqa">Алоқа</a></div></nav>
-
-<section class="hero">
-<span class="badge">Сунъий интеллект ечимлари</span>
-<h1>Бизнесингизни <em>сунъий интеллект</em> билан кучайтиринг</h1>
-<p>Жараёнларни автоматлаштирамиз, вақтингизни тежаймиз ва маълумотларингиздан real фойда оламиз.</p>
-<a class="btn" href="#aloqa">Бепул маслаҳат</a><a class="btn alt" href="#xizmat">Хизматлар</a>
-</section>
-
-<div class="stats">
-<div class="stat"><b>50+</b><span>амалга оширилган лойиҳа</span></div>
-<div class="stat"><b>24/7</b><span>ишлайдиган AI ёрдамчилар</span></div>
-<div class="stat"><b>3x</b><span>тезроқ иш жараёни</span></div>
-</div>
-
-<section id="xizmat">
-<h2>Хизматларимиз</h2>
-<div class="grid">
-<div class="card"><i>🤖</i><h3>Чат-ботлар</h3><p>Мижозларга 24/7 жавоб берадиган ақлли ёрдамчилар: Telegram, сайт ва ижтимоий тармоқлар учун.</p></div>
-<div class="card"><i>📊</i><h3>Маълумотлар таҳлили</h3><p>Ҳисоботларингизни таҳлил қилиб, аниқ тавсиялар ва башоратлар тайёрлаймиз.</p></div>
-<div class="card"><i>⚙️</i><h3>Автоматлаштириш</h3><p>Такрорланадиган ишларни AI га топширинг: ҳужжатлар, ёзишмалар, буюртмалар.</p></div>
-</div>
-</section>
-
-<section class="cta" id="aloqa">
-<h2>Лойиҳангизни бошлаймизми?</h2>
-<p>Ғоянгизни ёзинг — 24 соат ичида жавоб берамиз.</p>
-<a class="btn" href="mailto:info@ailab.uz">info@ailab.uz</a>
-</section>
-
-<footer>© 2026 АИЛаб. Барча ҳуқуқлар ҳимояланган.</footer>
-</div>
-</body>
-</html>
+<html lang="uz-Cyrl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Исмаилова Гулҳаё — AI видео ва сунъий интеллект курси</title><meta name="description" content="Тошкентда сунъий интеллект, AI видео ва промт курслари. 400+ ўқувчи. Устоз AI — Гулҳаё Исмаилова билан Instagram’да ривожланинг."><link rel="canonical" href="https://preeminent-sundae-f8b684.netlify.app/"><link rel="alternate" hreflang="uz-Cyrl" href="https://preeminent-sundae-f8b684.netlify.app/"><link rel="alternate" hreflang="uz-Latn" href="https://preeminent-sundae-f8b684.netlify.app/lotin/"><link rel="alternate" hreflang="ru" href="https://preeminent-sundae-f8b684.netlify.app/ru/"><link rel="alternate" hreflang="x-default" href="https://preeminent-sundae-f8b684.netlify.app/">
+<meta name="theme-color" content="#0a0a0a"><meta name="robots" content="index,follow">
+<meta property="og:type" content="website"><meta property="og:title" content="Исмаилова Гулҳаё — AI видео ва сунъий интеллект курси"><meta property="og:description" content="Тошкентда сунъий интеллект, AI видео ва промт курслари. 400+ ўқувчи. Устоз AI — Гулҳаё Исмаилова билан Instagram’да ривожланинг.">
+<meta property="og:url" content="https://preeminent-sundae-f8b684.netlify.app/"><meta property="og:image" content="https://preeminent-sundae-f8b684.netlify.app/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Исмаилова Гулҳаё — AI устози"><meta name="twitter:card" content="summary_large_image">
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0a0a0a;color:#f2efe6;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+:root{--g:#d4af37;--s:#16140f;--b:#2d2815;--m:#b8b3a2}.w{max-width:980px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:18px 0}.logo{font-weight:800;color:var(--g);font-size:20px;text-decoration:none}
+nav a{color:var(--m);text-decoration:none;margin-left:16px;font-size:15px}.lang a{color:var(--m);margin-left:10px;font-size:13px;text-decoration:none;border:1px solid var(--b);padding:3px 9px;border-radius:99px}.lang a.on{color:#0a0a0a;background:var(--g);border-color:var(--g)}
+.hero{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:center;padding:50px 0}.hero svg{width:100%;height:auto;border-radius:24px;border:1px solid var(--b)}
+.badge{display:inline-block;border:1px solid var(--g);color:var(--g);padding:4px 14px;border-radius:99px;font-size:13px}h1{font-size:clamp(30px,5vw,50px);line-height:1.12;margin:18px 0 14px}.lead{color:var(--m);font-size:18px;margin:0 0 26px}
+.btn{display:inline-block;padding:13px 26px;border-radius:12px;background:var(--g);color:#0a0a0a;font-weight:700;text-decoration:none;margin:0 10px 10px 0}.btn.o{background:none;color:var(--g);border:1px solid var(--g)}
+.st{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:60px}.st div,.card,.q,details{background:var(--s);border:1px solid var(--b);border-radius:16px}.st div{padding:20px;text-align:center}.st b{display:block;color:var(--g);font-size:28px}.st span{color:var(--m);font-size:14px}
+h2{font-size:28px;margin:0 0 24px;color:var(--g)}section{margin-bottom:60px}.gr{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.card{padding:24px}.card h3{margin:0 0 8px}.card p{margin:0 0 10px;color:var(--m)}.card small{color:var(--g)}
+.q{padding:24px;font-size:20px;border-left:4px solid var(--g)}details{padding:14px 20px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}details p{color:var(--m);margin:10px 0 0}
+.ct a{color:var(--g)}footer{text-align:center;color:var(--m);font-size:14px;padding:30px 0}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.hero svg{max-width:180px}.st{grid-template-columns:1fr}}</style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://preeminent-sundae-f8b684.netlify.app/#person", "name": "Исмаилова Гулҳаё", "jobTitle": "AI", "url": "https://preeminent-sundae-f8b684.netlify.app/", "telephone": "+998920015628", "sameAs": ["https://t.me/gulhayoaii", "https://instagram.com/gulhayo.ai"], "address": {"@type": "PostalAddress", "addressLocality": "Tashkent", "addressCountry": "UZ"}}, {"@type": "Organization", "@id": "https://preeminent-sundae-f8b684.netlify.app/#org", "name": "Устоз AI", "alternateName": "gulhayo.ai", "url": "https://preeminent-sundae-f8b684.netlify.app/", "logo": "https://preeminent-sundae-f8b684.netlify.app/og.png", "founder": {"@id": "https://preeminent-sundae-f8b684.netlify.app/#person"}, "sameAs": ["https://t.me/gulhayoaii", "https://instagram.com/gulhayo.ai"], "contactPoint": {"@type": "ContactPoint", "telephone": "+998920015628", "contactType": "customer support", "availableLanguage": ["uz", "ru"]}}, {"@type": "Course", "name": "AI видео курси", "description": "Сунъий интеллект ёрдамида жалб қилувчи видеолар яратишни ўргатаман. Блогерлар ва бизнес учун.", "provider": {"@id": "https://preeminent-sundae-f8b684.netlify.app/#org"}, "inLanguage": "uz-Cyrl"}, {"@type": "Course", "name": "Сунъий интеллект ва промт курси", "description": "AI дан тўғри фойдаланиш, самарали промт ёзиш ва иш жараёнини тезлаштириш.", "provider": {"@id": "https://preeminent-sundae-f8b684.netlify.app/#org"}, "inLanguage": "uz-Cyrl"}, {"@type": "Course", "name": "Instagram’да ривожланиш", "description": "AI воситалари билан контент режалаштириш, обуначи йиғиш ва саҳифани ўстириш.", "provider": {"@id": "https://preeminent-sundae-f8b684.netlify.app/#org"}, "inLanguage": "uz-Cyrl"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Курс неча кун давом этади?", "acceptedAnswer": {"@type": "Answer", "text": "Давомийлик танланган курсга қараб фарқ қилади. Аниқ жадвал учун Telegram’га ёзинг."}}, {"@type": "Question", "name": "Курс нархи қанча?", "acceptedAnswer": {"@type": "Answer", "text": "Нарх курс турига боғлиқ. Актуал нархни Telegram орқали аниқлаштириб берамиз."}}, {"@type": "Question", "name": "Ноутбук керакми?", "acceptedAnswer": {"@type": "Answer", "text": "Қайси курсни танлашингизга боғлиқ. Қурилмангизни ёзинг — мос ечимни айтамиз."}}, {"@type": "Question", "name": "Бошловчилар ҳам ўқий оладими?", "acceptedAnswer": {"@type": "Answer", "text": "Ҳа, AI ни энди бошлаётганлар учун ҳам тушунарли тарзда ўргатамиз."}}, {"@type": "Question", "name": "Дарслар қайси тилда?", "acceptedAnswer": {"@type": "Answer", "text": "Ўзбек ва рус тилларида."}}]}]}</script></head>
+<body><div class="w"><header><a class="logo" href="/">gulhayo.ai</a><nav><a href="#xizmat">Хизматлар</a><a href="#natija">Натижа</a><a href="#faq">Саволлар</a><a href="#aloqa">Алоқа</a></nav><div class="lang"><a href="/" class=on hreflang="uz-Cyrl">Ўзб</a><a href="/lotin/" hreflang="uz-Latn">Oʻzb</a><a href="/ru/" hreflang="ru">Рус</a></div></header>
+<main><section class="hero"><div><span class="badge">Устоз AI · gulhayo.ai</span><h1>Сунъий интеллектни ўрганинг ва ундан натижа олинг</h1><p class="lead">Мен Исмаилова Гулҳаё — AI бўйича устоз. Блогерлар, тадбиркорлар ва бизнес эгаларига AI видео, промт ёзиш ва Instagram’да ривожланишни ўргатаман.</p>
+<a class="btn" href="https://t.me/gulhayoaii" rel="noopener">Telegram’да ёзиш</a><a class="btn o" href="#xizmat">Курсларни кўриш</a></div>
+<svg viewBox="0 0 220 260" role="img" aria-label="Исмаилова Гулҳаё — AI устози"><title>Исмаилова Гулҳаё — AI устози</title><rect width="220" height="260" fill="#16140f"/><circle cx="110" cy="100" r="46" fill="none" stroke="#d4af37" stroke-width="3"/><path d="M30 240c10-50 45-70 80-70s70 20 80 70" fill="none" stroke="#d4af37" stroke-width="3"/></svg></section>
+<div class="st"><div><b>400+</b><span>ўқувчи</span></div><div><b>2 йил</b><span>тажриба</span></div><div><b>AI</b><span>бўйича сертификат</span></div></div>
+<section id="xizmat"><h2>Курс ва хизматлар</h2><div class="gr"><div class="card"><h3>AI видео курси</h3><p>Сунъий интеллект ёрдамида жалб қилувчи видеолар яратишни ўргатаман. Блогерлар ва бизнес учун.</p><small>Формат ва нарх — Telegram орқали</small></div><div class="card"><h3>Сунъий интеллект ва промт курси</h3><p>AI дан тўғри фойдаланиш, самарали промт ёзиш ва иш жараёнини тезлаштириш.</p><small>Формат ва нарх — Telegram орқали</small></div><div class="card"><h3>Instagram’да ривожланиш</h3><p>AI воситалари билан контент режалаштириш, обуначи йиғиш ва саҳифани ўстириш.</p><small>Формат ва нарх — Telegram орқали</small></div></div></section>
+<section id="natija"><h2>Ҳақиқий натижа</h2><div class="q">Ўқувчимиз атиги 70 та обуначи билан 1 ой ичида 1 200 доллар даромад қилди.</div></section>
+<section><h2>Устоз ҳақида</h2><p class="lead">Гулҳаё Исмаилова — Тошкентда фаолият юритувчи AI устози. 2 йиллик тажриба, 400 дан ортиқ ўқувчи ва AI бўйича сертификат. Дарсларни ўзбек ва рус тилларида олиб бораман.</p></section>
+<section id="faq"><h2>Кўп бериладиган саволлар</h2><details><summary>Курс неча кун давом этади?</summary><p>Давомийлик танланган курсга қараб фарқ қилади. Аниқ жадвал учун Telegram’га ёзинг.</p></details><details><summary>Курс нархи қанча?</summary><p>Нарх курс турига боғлиқ. Актуал нархни Telegram орқали аниқлаштириб берамиз.</p></details><details><summary>Ноутбук керакми?</summary><p>Қайси курсни танлашингизга боғлиқ. Қурилмангизни ёзинг — мос ечимни айтамиз.</p></details><details><summary>Бошловчилар ҳам ўқий оладими?</summary><p>Ҳа, AI ни энди бошлаётганлар учун ҳам тушунарли тарзда ўргатамиз.</p></details><details><summary>Дарслар қайси тилда?</summary><p>Ўзбек ва рус тилларида.</p></details></section>
+<section id="aloqa" class="ct"><h2>Боғланиш</h2><p class="lead">Саволингиз бўлса ёзинг ёки қўнғироқ қилинг.</p><p>Телефон: <a href="tel:+998920015628">+998920015628</a><br>Telegram: <a href="https://t.me/gulhayoaii" rel="noopener">@gulhayoaii</a><br>Instagram: <a href="https://instagram.com/gulhayo.ai" rel="noopener">@gulhayo.ai</a></p></section></main>
+<footer>© 2026 Исмаилова Гулҳаё · gulhayo.ai</footer></div></body></html>
