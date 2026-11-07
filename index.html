@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Сунъий интеллект — келажак бугун</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f7f8fc;--surface:#fff;--text:#12142a;--muted:#5a5f7d;--accent:#5b4bff;--accent2:#00b3a4;--border:#e3e5f1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0b0d1c;--surface:#14172c;--text:#eef0ff;--muted:#a3a8c8;--accent:#8a7dff;--accent2:#2fe0cf;--border:#252a4a}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0b0d1c;--surface:#14172c;--text:#eef0ff;--muted:#a3a8c8;--accent:#8a7dff;--accent2:#2fe0cf;--border:#252a4a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:20px}
+.logo span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:15px}
+.hero{padding:70px 0 60px;text-align:center}
+.badge{display:inline-block;padding:6px 14px;border:1px solid var(--border);border-radius:99px;color:var(--accent);font-size:13px;background:var(--surface)}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.1;margin:22px 0 16px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:620px;margin:0 auto 30px;color:var(--muted);font-size:18px}
+.btn{display:inline-block;padding:14px 28px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;color:var(--text);border:1px solid var(--border);margin-left:10px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:10px 0 70px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px;text-align:center}
+.stat b{display:block;font-size:30px;color:var(--accent)}
+.stat span{color:var(--muted);font-size:14px}
+h2{font-size:30px;text-align:center;margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:70px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px}
+.card i{font-style:normal;font-size:28px}
+.card h3{margin:12px 0 8px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.cta{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:24px;padding:48px 24px;text-align:center;color:#fff;margin-bottom:50px}
+.cta h2{margin-bottom:10px}
+.cta p{margin:0 0 22px;opacity:.95}
+.cta .btn{background:#fff;color:#12142a}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:20px 0 30px}
+@media(max-width:600px){.stats{grid-template-columns:1fr}.btn.alt{margin:10px 0 0}nav a{margin-left:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="logo">AI<span>Лаб</span></div><div><a href="#xizmat">Хизматлар</a><a href="#aloqa">Алоқа</a></div></nav>
+
+<section class="hero">
+<span class="badge">Сунъий интеллект ечимлари</span>
+<h1>Бизнесингизни <em>сунъий интеллект</em> билан кучайтиринг</h1>
+<p>Жараёнларни автоматлаштирамиз, вақтингизни тежаймиз ва маълумотларингиздан real фойда оламиз.</p>
+<a class="btn" href="#aloqa">Бепул маслаҳат</a><a class="btn alt" href="#xizmat">Хизматлар</a>
+</section>
+
+<div class="stats">
+<div class="stat"><b>50+</b><span>амалга оширилган лойиҳа</span></div>
+<div class="stat"><b>24/7</b><span>ишлайдиган AI ёрдамчилар</span></div>
+<div class="stat"><b>3x</b><span>тезроқ иш жараёни</span></div>
+</div>
+
+<section id="xizmat">
+<h2>Хизматларимиз</h2>
+<div class="grid">
+<div class="card"><i>🤖</i><h3>Чат-ботлар</h3><p>Мижозларга 24/7 жавоб берадиган ақлли ёрдамчилар: Telegram, сайт ва ижтимоий тармоқлар учун.</p></div>
+<div class="card"><i>📊</i><h3>Маълумотлар таҳлили</h3><p>Ҳисоботларингизни таҳлил қилиб, аниқ тавсиялар ва башоратлар тайёрлаймиз.</p></div>
+<div class="card"><i>⚙️</i><h3>Автоматлаштириш</h3><p>Такрорланадиган ишларни AI га топширинг: ҳужжатлар, ёзишмалар, буюртмалар.</p></div>
+</div>
+</section>
+
+<section class="cta" id="aloqa">
+<h2>Лойиҳангизни бошлаймизми?</h2>
+<p>Ғоянгизни ёзинг — 24 соат ичида жавоб берамиз.</p>
+<a class="btn" href="mailto:info@ailab.uz">info@ailab.uz</a>
+</section>
+
+<footer>© 2026 АИЛаб. Барча ҳуқуқлар ҳимояланган.</footer>
+</div>
+</body>
+</html>
